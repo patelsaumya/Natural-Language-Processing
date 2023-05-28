@@ -1,0 +1,17 @@
+Evaluation Metrics: (Classification -> Supervised Learning)
+    -> Accuracy:
+        Number of correct predictions made by the model divided by the total number of predictions.
+        It is useful when target classes are well balanced.
+    -> Recall:
+        Ability of the model to find all the relevant cases within a dataset.
+        Number of true positives divided by the number of true positives plus the number of false negatives.
+        Expresses the ability ot find all relevant instances in a dataset.
+    -> Precision:
+        Ability of a classification model to identify only the relevant data points.
+        Number of true positives divided by the number of true positives plus the number of false positives.
+        Expresses the proportion of the data points our model says was relevant that actually were relevant.
+    -> F1-Score:
+        Harmonic mean of precision and recall, taking both the metrics into account in the following equation:
+            F1 = 2 * (precision * recall) / (precision + recall)
+        We use the harmonic mean instead of a simple average because it punishes extreme values.
+        A classifier with a precision of 1.0 and a recall of 0.0 has a simple average of 0.5 but an F1 score of 0.
